@@ -21,7 +21,9 @@ export default function Hero() {
     const ctaRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-        const ctx = gsap.context(() => {
+        const mm = gsap.matchMedia();
+
+        mm.add("all", () => {
             // 1. Text Animation Word-by-Word
             const titleWords = titleRef.current?.querySelectorAll('.word')
             if (titleWords) {
@@ -54,8 +56,10 @@ export default function Hero() {
                     { y: 0, opacity: 1, stagger: 0.2, duration: 0.8, delay: 1.2, ease: "power2.out" }
                 )
             }
+        });
 
-            // 4. Parallax Background on Scroll
+        mm.add("(min-width: 768px)", () => {
+            // 4. Parallax Background on Scroll (Desktop Only to save mobile CPU/GPU)
             if (bgRef.current && containerRef.current) {
                 gsap.to(bgRef.current, {
                     yPercent: 30,
@@ -68,9 +72,9 @@ export default function Hero() {
                     }
                 })
             }
-        }, containerRef)
+        });
 
-        return () => ctx.revert()
+        return () => mm.revert()
     }, [])
 
     const titleText = "Welcome to Our Family Durga Puja"
@@ -92,8 +96,9 @@ export default function Hero() {
                         alt="Hero Background"
                         fill
                         priority
+                        sizes="(max-width: 768px) 100vw, 100vw"
                         className="object-cover object-[center_10%]"
-                        quality={100}
+                        quality={80}
                     />
                 </div>
                 {/* Lighter top-to-bottom gradient so image is visible */}
