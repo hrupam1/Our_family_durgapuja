@@ -134,7 +134,8 @@ export default function Navbar() {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden relative z-50 text-puja-ivory p-2"
+                    className="md:hidden relative z-50 text-puja-ivory min-w-[44px] min-h-[44px] flex items-center justify-center p-2"
+                    aria-label="Toggle mobile menu"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

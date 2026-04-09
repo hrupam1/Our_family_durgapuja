@@ -1,9 +1,11 @@
 import Hero from '@/components/Hero'
-import ImageSlider from '@/components/ImageSlider'
-import Timeline from '@/components/Timeline'
-import DatesSchedule from '@/components/DatesSchedule'
-import OurStoryPreview from '@/components/OurStoryPreview'
-import BengaliChant from '@/components/BengaliChant'
+import dynamic from 'next/dynamic'
+
+const ImageSlider = dynamic(() => import('@/components/ImageSlider'))
+const Timeline = dynamic(() => import('@/components/Timeline'))
+const DatesSchedule = dynamic(() => import('@/components/DatesSchedule'))
+const OurStoryPreview = dynamic(() => import('@/components/OurStoryPreview'))
+const BengaliChant = dynamic(() => import('@/components/BengaliChant'))
 
 export default function Home() {
     return (

@@ -132,13 +132,17 @@ export default function ImageSlider() {
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`transition-all duration-500 rounded-full ${index === currentIndex
-                            ? 'w-8 h-2 bg-puja-gold'
-                            : 'w-2 h-2 bg-white/50 hover:bg-white/80'
-                            }`}
+                        className="p-3 outline-none"
                         onClick={() => setCurrentIndex(index)}
                         aria-label={`Go to slide ${index + 1}`}
-                    />
+                    >
+                        <div
+                            className={`transition-all duration-500 rounded-full ${index === currentIndex
+                                ? 'w-8 h-2 bg-puja-gold'
+                                : 'w-2 h-2 bg-white/50 hover:bg-white/80'
+                                }`}
+                        />
+                    </button>
                 ))}
             </div>
         </section>

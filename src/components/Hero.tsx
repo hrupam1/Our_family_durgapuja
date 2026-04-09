@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowRight } from 'lucide-react'
@@ -85,9 +86,16 @@ export default function Hero() {
                 className="absolute inset-0 z-0 h-[130%]"
             >
                 {/* Background image from uploaded family photo */}
-                <div
-                    className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-[center_10%]"
-                />
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/hero-bg.jpg"
+                        alt="Hero Background"
+                        fill
+                        priority
+                        className="object-cover object-[center_10%]"
+                        quality={100}
+                    />
+                </div>
                 {/* Lighter top-to-bottom gradient so image is visible */}
                 <div className="absolute inset-0 bg-gradient-to-b from-puja-dark/40 via-transparent to-puja-dark z-10" />
                 {/* Subtle Mandala/Particles overlay simulation, reduced opacity */}
