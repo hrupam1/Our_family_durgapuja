@@ -340,11 +340,14 @@ export default function YearMemoriesPage() {
                                 className="relative w-full rounded-xl overflow-hidden cursor-pointer group break-inside-avoid shadow-lg border border-white/5"
                                 onClick={() => setSelectedImg(img.src)}
                             >
-                                <img
+                                <Image
                                     src={img.src}
                                     alt={`Memory ${img.id}`}
-                                    className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-110"
-                                    loading="lazy"
+                                    width={800}
+                                    height={600}
+                                    quality={70}
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-puja-gold/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </motion.div>
@@ -378,7 +381,8 @@ export default function YearMemoriesPage() {
                                         alt="Enlarged Memory"
                                         fill
                                         className="object-contain"
-                                        quality={100}
+                                        sizes="100vw"
+                                        quality={85}
                                     />
                                 </motion.div>
                             </motion.div>

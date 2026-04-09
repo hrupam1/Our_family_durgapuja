@@ -78,17 +78,8 @@ export default function ImageSlider() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1.2, ease: "easeInOut" }}
                 >
-                    {/* Ambient Blurred Background */}
-                    <div className="absolute inset-0 z-0 overflow-hidden">
-                        <Image
-                            src={slides[currentIndex].image}
-                            alt=""
-                            fill
-                            className="object-cover w-full h-full scale-125 blur-3xl opacity-80 mix-blend-screen"
-                            quality={10}
-                        />
-                        <div className="absolute inset-0 bg-[#A41B1F] opacity-30" />
-                    </div>
+                    {/* Background */}
+                    <div className="absolute inset-0 z-0 bg-[#A41B1F] opacity-30" />
 
                     {/* Main Image */}
                     <div className="absolute inset-x-0 inset-y-8 md:inset-x-8 md:inset-y-0 z-10">
@@ -96,9 +87,10 @@ export default function ImageSlider() {
                             src={slides[currentIndex].image}
                             alt={slides[currentIndex].caption}
                             fill
+                            sizes="100vw"
                             className="object-contain w-full h-full"
                             priority
-                            quality={100}
+                            quality={75}
                         />
                         {/* Subtle bottom gradient only for text contrast if needed */}
                         <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-puja-dark/50 to-transparent z-10 pointer-events-none" />
