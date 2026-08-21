@@ -24,11 +24,15 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    const navLinks = [
+    const navLinksLeft = [
         { name: 'Home', href: '/' },
+        { name: 'Puja Samagri', href: '/puja-samagri' },
+        { name: 'Events', href: '/events' },
+    ]
+
+    const navLinksRight = [
         { name: 'Our Story', href: '/our-story' },
         { name: 'About Us', href: '/about-us' },
-        { name: 'Events', href: '/events' },
     ]
 
     const NavLink = ({ item, isMobile = false }: { item: any, isMobile?: boolean }) => {
@@ -82,7 +86,7 @@ export default function Navbar() {
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-6">
-                    {navLinks.map((item) => (
+                    {navLinksLeft.map((item) => (
                         <NavLink key={item.name} item={item} />
                     ))}
 
@@ -130,6 +134,10 @@ export default function Navbar() {
                             )}
                         </AnimatePresence>
                     </div>
+
+                    {navLinksRight.map((item) => (
+                        <NavLink key={item.name} item={item} />
+                    ))}
                 </div>
 
                 {/* Mobile Toggle */}
@@ -153,7 +161,7 @@ export default function Navbar() {
                         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                         className="fixed inset-0 min-h-screen bg-puja-dark/95 backdrop-blur-xl z-40 flex flex-col pt-24 px-6 overflow-y-auto"
                     >
-                        {navLinks.map((item) => (
+                        {navLinksLeft.map((item) => (
                             <NavLink key={item.name} item={item} isMobile />
                         ))}
 
@@ -173,6 +181,10 @@ export default function Navbar() {
                                 ))}
                             </div>
                         </div>
+
+                        {navLinksRight.map((item) => (
+                            <NavLink key={item.name} item={item} isMobile />
+                        ))}
 
                         <div className="mt-auto py-8 text-center text-sm text-white/50">
                             © {new Date().getFullYear()} Our Family Durga Puja

@@ -36,9 +36,7 @@ export default function AboutUs() {
                             Today, with the blessings of Maa Durga, we are honored to fulfill that dream and continue this tradition with love, faith, and togetherness.
                         </p>
 
-                        <p className="font-sans text-2xl text-puja-gold-light font-medium tracking-wide pt-6 mt-6 border-t border-white/10 text-center italic">
-                            দাদু, আমরা আপনার ইচ্ছা পূরণ করেছি।
-                        </p>
+
                     </div>
                 </motion.div>
             </div>
