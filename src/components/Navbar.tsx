@@ -31,6 +31,7 @@ export default function Navbar() {
     ]
 
     const navLinksRight = [
+        { name: 'Scripts', href: '#', isUpcoming: true },
         { name: 'Our Story', href: '/our-story' },
         { name: 'About Us', href: '/about-us' },
     ]
@@ -40,16 +41,27 @@ export default function Navbar() {
 
         return (
             <Link
-                href={item.href}
+                href={item.isUpcoming ? '#' : item.href}
                 className={cn(
-                    "relative group font-sans text-sm tracking-wide transition-colors",
+                    "relative group font-sans text-sm tracking-wide transition-colors flex items-center gap-2",
                     isActive ? "text-puja-gold" : "text-puja-ivory hover:text-puja-gold",
-                    isMobile ? "block w-full py-4 text-xl border-b border-white/10" : "px-3 py-2"
+                    isMobile ? "w-full py-4 text-xl border-b border-white/10" : "px-3 py-2",
+                    item.isUpcoming && "opacity-80 cursor-default"
                 )}
-                onClick={() => isMobile && setIsMobileMenuOpen(false)}
+                onClick={(e) => {
+                    if (item.isUpcoming) {
+                        e.preventDefault();
+                    }
+                    if (isMobile) setIsMobileMenuOpen(false);
+                }}
             >
                 {item.name}
-                {!isMobile && (
+                {item.isUpcoming && (
+                    <span className="text-[10px] leading-none uppercase tracking-wider bg-puja-gold/20 text-puja-gold px-1.5 py-1 rounded-sm border border-puja-gold/30">
+                        Upcoming
+                    </span>
+                )}
+                {!isMobile && !item.isUpcoming && (
                     <span className={cn(
                         "absolute -bottom-1 left-0 h-0.5 bg-puja-gold transition-all duration-300 ease-out",
                         isActive ? "w-full" : "w-0 group-hover:w-full"

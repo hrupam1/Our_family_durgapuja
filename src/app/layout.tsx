@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     description: 'Celebrating devotion, tradition, and togetherness',
 }
 
+import Footer from '@/components/Footer'
+
 export default function RootLayout({
     children,
 }: {
@@ -30,12 +32,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-            <body className="font-sans antialiased text-puja-ivory bg-puja-dark selection:bg-puja-gold selection:text-puja-dark">
+            <body className="font-sans antialiased text-puja-ivory bg-puja-dark selection:bg-puja-gold selection:text-puja-dark flex flex-col min-h-screen">
                 <SmoothScrolling>
                     <Navbar />
-                    <main className="min-h-screen">
+                    <main className="flex-1">
                         {children}
                     </main>
+                    <Footer />
                 </SmoothScrolling>
             </body>
         </html>

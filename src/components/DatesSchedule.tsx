@@ -6,12 +6,12 @@ import { Sparkles, Sunrise, Heart, Star, CloudSun, Sunset, Sun, Clock } from 'lu
 
 const scheduleData = [
     { day: "Mahalaya", tithi: "Prathama / Amavasya", date: "October 10, 2026 (Saturday)", icon: Sunrise },
-    { day: "Maha Panchami", tithi: "Panchami", date: "October 16, 2026 (Friday)", icon: Star },
-    { day: "Maha Shashti", tithi: "Shashti", date: "October 17, 2026 (Saturday)", icon: CloudSun },
-    { day: "Maha Saptami", tithi: "Saptami", date: "October 18, 2026 (Sunday)", icon: Sun },
+    { day: "Maha Panchami", tithi: "Panchami", date: "October 15, 2026 (Thursday)", icon: Star },
+    { day: "Maha Shashti", tithi: "Shashti", date: "October 16, 2026 (Friday)", icon: CloudSun },
+    { day: "Maha Saptami", tithi: "Saptami", date: "October 17 & 18, 2026 (Sat & Sun)", icon: Sun },
     { day: "Maha Ashtami", tithi: "Ashtami", date: "October 19, 2026 (Monday)", icon: Sparkles },
-    { day: "Maha Navami", tithi: "Navami", date: "October 19, 2026 (Monday)", icon: Heart },
-    { day: "Vijaya Dashami", tithi: "Dashami", date: "October 20, 2026 (Tuesday)", icon: Sunset },
+    { day: "Maha Navami", tithi: "Navami", date: "October 20, 2026 (Tuesday)", icon: Heart },
+    { day: "Vijaya Dashami", tithi: "Dashami", date: "October 21, 2026 (Wednesday)", icon: Sunset },
 ]
 
 export default function DatesSchedule() {
