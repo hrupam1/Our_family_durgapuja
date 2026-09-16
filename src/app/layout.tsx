@@ -32,6 +32,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+            <head>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4628453462795407" crossOrigin="anonymous"></script>
+            </head>
             <body className="font-sans antialiased text-puja-ivory bg-puja-dark selection:bg-puja-gold selection:text-puja-dark flex flex-col min-h-screen">
                 <SmoothScrolling>
                     <Navbar />
