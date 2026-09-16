@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 }
 
 import Footer from '@/components/Footer'
+import AdBanner from '@/components/AdBanner'
 
 export default function RootLayout({
     children,
@@ -41,6 +42,7 @@ export default function RootLayout({
                     <main className="flex-1">
                         {children}
                     </main>
+                    <AdBanner />
                     <Footer />
                 </SmoothScrolling>
             </body>
