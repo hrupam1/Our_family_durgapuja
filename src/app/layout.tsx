@@ -21,6 +21,9 @@ const inter = Inter({
 export const metadata: Metadata = {
     title: 'Our Family Durga Puja',
     description: 'Celebrating devotion, tradition, and togetherness',
+    icons: {
+        icon: '/logo.png',
+    },
 }
 
 import Footer from '@/components/Footer'
