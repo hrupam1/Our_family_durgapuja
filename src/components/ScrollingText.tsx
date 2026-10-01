@@ -18,7 +18,7 @@ export default function ScrollingText() {
                 transition={{ 
                     repeat: Infinity, 
                     ease: "linear", 
-                    duration: 60 
+                    duration: 100 
                 }}
             >
                 <span className="text-lg md:text-xl font-bold px-4">{repeatedText} ✦ </span>

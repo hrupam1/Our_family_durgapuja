@@ -37,7 +37,7 @@ export default function EventPostersSlider() {
         <section className="relative w-full h-[80vh] md:h-[90vh] bg-gradient-to-b from-puja-dark via-[#1a0505] to-puja-dark overflow-hidden py-12 flex flex-col justify-center border-y border-white/5">
             
             <div className="text-center mb-8 relative z-30 shrink-0">
-                <h2 className="font-heading text-4xl md:text-5xl text-puja-gold font-bold text-glow">Event Posters</h2>
+                <h2 className="font-heading text-4xl md:text-5xl text-puja-gold font-bold text-glow">Durga Puja 2026 Events</h2>
                 <div className="w-24 h-1 bg-puja-red mx-auto mt-4 rounded-full shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
             </div>
 
