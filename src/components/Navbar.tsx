@@ -31,7 +31,8 @@ export default function Navbar() {
     ]
 
     const navLinksRight = [
-        { name: 'Scripts', href: '#', isUpcoming: true },
+        { name: 'Scripts', href: '/scripts' },
+        { name: 'Members', href: '/members' },
         { name: 'Our Story', href: '/our-story' },
         { name: 'About Us', href: '/about-us' },
     ]
