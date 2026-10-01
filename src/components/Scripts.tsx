@@ -514,11 +514,66 @@ export default function Scripts() {
                                 transition={{ duration: 0.4 }}
                                 className="w-full"
                             >
-                                <div className="bg-white/5 border border-puja-red/30 rounded-3xl p-12 backdrop-blur-sm relative overflow-hidden">
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-puja-red/0 via-puja-red/20 to-puja-red/0 opacity-50 blur-lg animate-pulse" />
-                                    <p className="text-puja-red/80 text-xl font-serif relative z-10">
-                                        No announcements at the moment. Stay tuned for updates! 📢
-                                    </p>
+                                <div className="relative group text-left">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-puja-gold/20 via-transparent to-puja-red/20 rounded-2xl transform group-hover:scale-[1.01] transition-transform duration-500" />
+                                    
+                                    <div className="relative bg-puja-dark/80 border border-white/10 p-8 md:p-12 rounded-2xl backdrop-blur-md flex flex-col items-center text-center">
+                                        <div className="absolute top-4 left-4 text-puja-gold/40">❧</div>
+                                        <div className="absolute top-4 right-4 text-puja-gold/40 rotate-90">❧</div>
+                                        <div className="absolute bottom-4 right-4 text-puja-gold/40 rotate-180">❧</div>
+                                        <div className="absolute bottom-4 left-4 text-puja-gold/40 -rotate-90">❧</div>
+
+                                        <h2 className="text-4xl font-heading text-puja-gold mb-6 border-b border-puja-gold/30 pb-4 inline-block">
+                                            Script 1
+                                        </h2>
+                                        
+                                        <div className="space-y-6 font-sans text-lg md:text-xl text-puja-ivory/90 leading-relaxed text-left w-full mt-4">
+                                            <p className="text-center font-semibold text-xl md:text-2xl mb-12 text-white leading-loose">
+                                                সকল গ্রামবাসীদের জানাই ২০২৬ এর দুর্গাপূজার আন্তরিক শুভেচ্ছা ও অভিনন্দন।<br />
+                                                সবার পূজা আনন্দে কাটুক—এটাই আমাদের কাম্য।<br />
+                                                <span className="text-puja-gold">এ বছর আমাদের পূজা সপ্তম বছরে পদার্পণ করেছে।</span><br />
+                                                এই সপ্তম বছরে নানান কর্মসূচির আয়োজন করা হয়েছে এবং থাকছে আকর্ষণীয় সব খেলাধুলা:
+                                            </p>
+
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                <div className="bg-black/20 p-6 rounded-xl border border-white/5 hover:border-puja-gold/30 transition-colors">
+                                                    <h3 className="text-puja-gold font-bold text-2xl mb-4">🗓️ সপ্তমী (প্রথম দিন)</h3>
+                                                    <ul className="space-y-3 list-disc list-inside">
+                                                        <li>মিউজিক্যাল চেয়ার</li>
+                                                        <li>বল পাসিং</li>
+                                                        <li>হাঁড়ি ভাঙা</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="bg-black/20 p-6 rounded-xl border border-white/5 hover:border-puja-gold/30 transition-colors">
+                                                    <h3 className="text-puja-gold font-bold text-2xl mb-4">🗓️ সপ্তমী (দ্বিতীয় দিন)</h3>
+                                                    <ul className="space-y-3 list-disc list-inside">
+                                                        <li>স্কিপিং</li>
+                                                        <li>বেলুন শুটিং</li>
+                                                        <li>বিস্কুট দৌড়</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="bg-black/20 p-6 rounded-xl border border-white/5 hover:border-puja-gold/30 transition-colors">
+                                                    <h3 className="text-puja-gold font-bold text-2xl mb-4">🗓️ মহাঅষ্টমী</h3>
+                                                    <ul className="space-y-3 list-disc list-inside">
+                                                        <li>মোমবাতি জ্বালানো</li>
+                                                        <li>শঙ্খধ্বনি</li>
+                                                        <li>হেডফোন রাউন্ড</li>
+                                                        <li>মণ্ডপের মহারথী: বুদ্ধির কুইজ</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="bg-black/20 p-6 rounded-xl border border-white/5 hover:border-puja-gold/30 transition-colors">
+                                                    <h3 className="text-puja-gold font-bold text-2xl mb-4">🗓️ মহানবমী</h3>
+                                                    <ul className="space-y-3 list-disc list-inside">
+                                                        <li>রূপ সজ্জা</li>
+                                                        <li>মণ্ডপের মহারথী: বুদ্ধির কুইজ</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </motion.div>
                         )}
