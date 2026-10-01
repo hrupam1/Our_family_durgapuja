@@ -27,21 +27,13 @@ const eventCategories = [
                     <span className="text-puja-gold font-bold inline-block mt-2">👉 একাধিক খেলায় অংশগ্রহণ করা যাবে।</span>
                 </p>
                 
-                <div className="flex flex-col sm:flex-row justify-center gap-6 mb-10">
+                <div className="flex flex-col sm:flex-row justify-center gap-6">
                     <a href="https://bit.ly/4iH6anU" target="_blank" rel="noreferrer" className="inline-block bg-puja-red text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-all border border-puja-gold/50 shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:shadow-[0_0_25px_rgba(220,38,38,0.7)] hover:-translate-y-1">
                         নিবন্ধনের জন্য এখানে ক্লিক করুন (Register)
                     </a>
                     <a href="https://bit.ly/4qO28f8" target="_blank" rel="noreferrer" className="inline-block bg-puja-gold text-puja-dark px-8 py-4 rounded-full font-bold hover:bg-yellow-500 transition-all shadow-[0_0_15px_rgba(255,215,0,0.5)] hover:shadow-[0_0_25px_rgba(255,215,0,0.7)] hover:-translate-y-1">
                         আমাদের ওয়েবসাইট (Website)
                     </a>
-                </div>
-
-                <div className="bg-black/20 p-6 rounded-2xl max-w-2xl mx-auto border border-white/5">
-                    <p className="text-white/80 font-sans mb-4">
-                        Website-এ পাবেন: পূজা সম্পর্কিত সকল তথ্য, অনুষ্ঠানের সময়সূচি, ছবি ও আপডেট, আরও অনেক কিছু...
-                    </p>
-                    <p className="text-2xl text-puja-gold font-serif italic mb-2">"এসো সবাই, আনন্দে মাতি, পূজা হোক জমজমাটি!"</p>
-                    <p className="text-puja-ivory font-bold opacity-80">— আয়োজনে: আমাদের হালদার পরিবার</p>
                 </div>
             </div>
         ),
