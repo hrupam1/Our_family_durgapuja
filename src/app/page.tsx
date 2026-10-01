@@ -1,6 +1,8 @@
 import Hero from '@/components/Hero'
 import dynamic from 'next/dynamic'
 
+const ScrollingText = dynamic(() => import('@/components/ScrollingText'))
+
 const EventPostersSlider = dynamic(() => import('@/components/EventPostersSlider'))
 const ImageSlider = dynamic(() => import('@/components/ImageSlider'))
 const Timeline = dynamic(() => import('@/components/Timeline'))
@@ -13,6 +15,7 @@ export default function Home() {
     return (
         <div className="flex flex-col min-h-screen">
             <Hero />
+            <ScrollingText />
             <Countdown />
             <EventPostersSlider />
             <DatesSchedule />
