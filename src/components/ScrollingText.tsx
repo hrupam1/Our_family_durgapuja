@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function ScrollingText() {
     // Default text placeholder
@@ -10,11 +11,19 @@ export default function ScrollingText() {
     const repeatedText = Array(10).fill(defaultText).join(" ✦ ")
 
     return (
-        <div className="w-full bg-puja-gold text-puja-dark py-3 overflow-hidden border-y-2 border-puja-red/20 shadow-md">
-            <div className="flex animate-marquee whitespace-nowrap w-max">
+        <div className="w-full bg-puja-gold text-puja-dark py-3 overflow-hidden border-y-2 border-puja-red/20 shadow-md flex">
+            <motion.div 
+                className="flex whitespace-nowrap w-max"
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{ 
+                    repeat: Infinity, 
+                    ease: "linear", 
+                    duration: 25 
+                }}
+            >
                 <span className="text-lg md:text-xl font-bold px-4">{repeatedText} ✦ </span>
                 <span className="text-lg md:text-xl font-bold px-4">{repeatedText} ✦ </span>
-            </div>
+            </motion.div>
         </div>
     )
 }
