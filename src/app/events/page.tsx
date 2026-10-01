@@ -31,9 +31,6 @@ const eventCategories = [
                     <a href="https://bit.ly/4iH6anU" target="_blank" rel="noreferrer" className="inline-block bg-puja-red text-white px-8 py-4 rounded-full font-bold hover:bg-red-700 transition-all border border-puja-gold/50 shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:shadow-[0_0_25px_rgba(220,38,38,0.7)] hover:-translate-y-1">
                         নিবন্ধনের জন্য এখানে ক্লিক করুন (Register)
                     </a>
-                    <a href="https://bit.ly/4qO28f8" target="_blank" rel="noreferrer" className="inline-block bg-puja-gold text-puja-dark px-8 py-4 rounded-full font-bold hover:bg-yellow-500 transition-all shadow-[0_0_15px_rgba(255,215,0,0.5)] hover:shadow-[0_0_25px_rgba(255,215,0,0.7)] hover:-translate-y-1">
-                        আমাদের ওয়েবসাইট (Website)
-                    </a>
                 </div>
             </div>
         ),
