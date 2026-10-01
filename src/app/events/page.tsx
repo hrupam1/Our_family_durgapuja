@@ -5,6 +5,46 @@ import { Calendar, Droplet, Music, Smile, Sun, CheckCircle } from 'lucide-react'
 
 const eventCategories = [
     {
+        title: 'Event Posters',
+        extraContent: (
+            <div className="bg-white/5 border border-puja-gold/20 rounded-3xl p-8 backdrop-blur-sm text-center">
+                <p className="text-puja-ivory/70 text-lg mb-8">
+                    Stay tuned! The official Event Posters will be uploaded here soon.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    {/* Placeholder for Poster 1 */}
+                    <div className="aspect-[3/4] bg-black/40 rounded-2xl border border-white/10 flex flex-col items-center justify-center gap-4 group hover:border-puja-gold/50 transition-colors shadow-lg">
+                        <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-puja-gold">
+                            <svg className="w-8 h-8 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <span className="text-white/50 group-hover:text-puja-gold transition-colors font-sans">Poster Space</span>
+                    </div>
+                    {/* Placeholder for Poster 2 */}
+                    <div className="aspect-[3/4] bg-black/40 rounded-2xl border border-white/10 flex flex-col items-center justify-center gap-4 group hover:border-puja-gold/50 transition-colors shadow-lg hidden sm:flex">
+                        <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-puja-gold">
+                            <svg className="w-8 h-8 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <span className="text-white/50 group-hover:text-puja-gold transition-colors font-sans">Poster Space</span>
+                    </div>
+                    {/* Placeholder for Poster 3 */}
+                    <div className="aspect-[3/4] bg-black/40 rounded-2xl border border-white/10 flex flex-col items-center justify-center gap-4 group hover:border-puja-gold/50 transition-colors shadow-lg hidden lg:flex">
+                        <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-puja-gold">
+                            <svg className="w-8 h-8 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <span className="text-white/50 group-hover:text-puja-gold transition-colors font-sans">Poster Space</span>
+                    </div>
+                </div>
+            </div>
+        ),
+        events: []
+    },
+    {
         title: 'Rituals Events',
         events: [
             { id: 1, title: 'Sandhi Puja', time: '11:45 PM - 12:30 AM', desc: 'The sacred transition from Ashtami to Navami, marked by lighting 108 diyas and offering 108 lotus flowers.', icon: Sun },
